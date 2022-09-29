@@ -1,0 +1,12 @@
+extends  ./layout/base
+
+block content 
+    if error 
+        span=error
+    form(method="post") 
+        input(type="text", name="userId", required, placeholder="userId")
+        input(type="password", name="password", required, placeholder="password")
+        input(type="password", name="password2", required, placeholder="Confirm password")
+        input(type="email", name="email", required, placeholder="email")
+        input(type="text", name="nickName", required, placeholder="nickName")
+        input(type="submit", value="Join")

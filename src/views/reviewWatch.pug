@@ -1,0 +1,23 @@
+extends  ./layout/base
+
+block content 
+    if error 
+        span=error
+    nav
+        ul 
+            li 
+                a(href=`${review._id}/edit`) 수정 
+            li 
+                a(href=`${review._id}/delete`) 삭제 
+    hr
+    p 제목: #{review.bookTitle}
+    p 작가: #{review.author}
+    p 글쓴이: #{review.username}
+    p 내용: #{review.text}
+    p 날짜: #{new Date(review.date).toLocaleString()}
+    hr
+    if review.publicationYear
+        p 출판날짜: #{review.publicationYear}
+    if review.publisher
+        p 출판사: #{review.publisher}
+    

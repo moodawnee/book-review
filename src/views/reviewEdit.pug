@@ -1,0 +1,12 @@
+extends  ./layout/base
+
+block content 
+    if error 
+        span=error
+    form(method="post") 
+        input(type="text", placeholder="bookTitle", name="bookTitle", value=review.bookTitle, required)
+        input(type="text", placeholder="author", name="author", value=review.author, required)
+        input(type="text", placeholder="text", name="text", value=review.text, required)
+        input(type="number", placeholder="publicationYear", name="publicationYear", value=review.publicationYear)
+        input(type="text", placeholder="publisher", name="publisher", value=review.publisher)
+        input(type="submit", value="수정")

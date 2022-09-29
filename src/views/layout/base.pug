@@ -1,0 +1,25 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Book Review | Tree
+        link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+    body 
+        header 
+            h1=pageTitle
+            nav 
+                ul 
+                    li 
+                        a(href="/") 홈
+                    if !loggedIn
+                        li 
+                            a(href="/join") 회원가입 
+                        li 
+                            a(href="/login") 로그인 
+                    else
+                        li
+                            a(href="/review_register") 리뷰쓰기 
+        main 
+            block content 

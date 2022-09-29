@@ -1,0 +1,13 @@
+extends  ./layout/base
+
+block content 
+    if error 
+        span=error
+    form(method="post") 
+        input(type="text", name="bookTitle", placeholder="bookTitle", required)
+        input(type="text", name="author", placeholder="author", required)
+        input(type="number", name="publicationYear", placeholder="publicationYear")
+        input(type="text", name="publisher", placeholder="publisher")
+        input(type="text", name="username", placeholder="username", required)
+        input(type="text", name="text", placeholder="text", required)
+        input(type="submit", value="등록")

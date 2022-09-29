@@ -1,7 +1,7 @@
 {
   "name": "booktree",
   "version": "1.0.0",
-  "description": "다양한 책들 감상평 +드라마, 영화, 기타 등등",
+  "description": "다양한 책들 감상평",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/moodawnee/book-review.git"
@@ -16,7 +16,9 @@
   },
   "homepage": "https://github.com/moodawnee/book-review.git#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "^4.18.1",
+    "express-session": "^1.17.3",
     "morgan": "^1.10.0",
     "pug": "^3.0.2"
   },
@@ -24,7 +26,7 @@
     "@babel/core": "^7.18.13",
     "@babel/node": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
-    "nodemon": "^2.0.19",
-    "mongoose": "^6.6.0"
+    "mongoose": "^6.6.0",
+    "nodemon": "^2.0.19"
   }
 }
